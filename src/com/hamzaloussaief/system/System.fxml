@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hamzaloussaief.system.SystemController">
+   <top>
+      <AnchorPane maxHeight="2000.0" maxWidth="2000.0" style="-fx-background-color: #191524;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="home" contentDisplay="TOP" layoutY="-5.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="108.0" prefWidth="108.0" style="-fx-background-color: transparent;" text="HOME" textFill="#f5f2f2">
+               <graphic>
+                  <FontAwesomeIcon fill="#0c6cf5" glyphName="HOME" size="60" text="" textAlignment="CENTER" wrappingWidth="91.71428680419922" />
+               </graphic>
+            </Button>
+            <Button layoutX="927.0" mnemonicParsing="false" onMouseClicked="#login" style="-fx-background-color: transparent;" textAlignment="JUSTIFY" textFill="#e10707">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                 
+               </graphic>
+               <graphic>
+                  <FontAwesomeIcon fill="#bf1d1d" glyphName="CLOSE" size="20" />
+               </graphic>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="ap" maxHeight="600.0" maxWidth="500.0" style="-fx-background-color: #E3E3E8;" BorderPane.alignment="CENTER">
+         <children>
+            <Button contentDisplay="TOP" layoutY="59.0" mnemonicParsing="false" onMouseClicked="#page1" prefHeight="101.0" prefWidth="435.0" style="-fx-background-color: transparent;" text="Saisie " textFill="#252424">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c6cf5" glyphName="PASTE" size="50" />
+               </graphic>
+               
+                                          </Button>
+            <Button contentDisplay="TOP" layoutX="522.0" layoutY="59.0" mnemonicParsing="false" onMouseClicked="#page7" prefHeight="101.0" prefWidth="435.0" style="-fx-background-color: transparent;" text="Gestion des comptes" textFill="#252424">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c6cf5" glyphName="USERS" size="50" />
+               </graphic>
+               
+                        </Button>
+            <Button contentDisplay="TOP" layoutX="247.0" layoutY="59.0" mnemonicParsing="false" onMouseClicked="#page3" prefHeight="101.0" prefWidth="435.0" style="-fx-background-color: transparent;" text="Ajout article" textFill="#252424">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c6cf5" glyphName="INDENT" size="50" />
+               </graphic>
+               
+                                    </Button>
+            <Button contentDisplay="TOP" layoutX="247.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#page6" prefHeight="101.0" prefWidth="435.0" style="-fx-background-color: transparent;" text="Consulter mise en services" textFill="#252424">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c6cf5" glyphName="PASTE" size="50" />
+               </graphic>
+               
+                              </Button>
+            <Button contentDisplay="TOP" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#page5" prefHeight="101.0" prefWidth="435.0" style="-fx-background-color: transparent;" text="Saisie fiche" textFill="#252424">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0c6cf5" glyphName="PASTE" size="50" />
+               </graphic>
+               
+                        </Button>
+            <Button contentDisplay="TOP" layoutX="536.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#page4" prefHeight="101.0" prefWidth="435.0" style="-fx-background-color: transparent;" text="Gestion d'équipement" textFill="#252424">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Sans%20titre.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="102.0" fitWidth="116.0" layoutX="863.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@téléchargement-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button alignment="TOP_CENTER" contentDisplay="TOP" layoutX="322.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#page2" prefHeight="76.0" prefWidth="285.0" style="-fx-background-color: transparent;" text="Consultation du matériel">
+               <graphic>
+                  <FontAwesomeIcon fill="#0c6cf5" glyphName="INDENT" size="50" />
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

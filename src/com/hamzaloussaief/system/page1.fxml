@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="550.0" prefWidth="1348.0" style="-fx-background-color: #191524;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hamzaloussaief.system.Page1Controller">
+   <children>
+      <AnchorPane layoutY="254.0" prefHeight="296.0" prefWidth="228.0" style="-fx-background-color: #191524;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txt_description" layoutX="-15.0" layoutY="201.0" prefHeight="30.0" prefWidth="180.0" promptText="Description" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+            <TextField fx:id="txt_lieu" layoutX="-15.0" layoutY="246.0" prefHeight="30.0" prefWidth="180.0" promptText="Lieu" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+            <TextField fx:id="txt_type" layoutX="-15.0" layoutY="292.0" prefHeight="30.0" prefWidth="180.0" promptText="Type" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+            <TextField fx:id="txt_ref" layoutX="-15.0" layoutY="337.0" prefHeight="30.0" prefWidth="180.0" promptText="Reférence" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+            <TextField fx:id="txt_enservice" layoutX="-15.0" layoutY="383.0" prefHeight="30.0" prefWidth="180.0" promptText="En service" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+            <TextField fx:id="txt_etat" layoutX="-14.0" layoutY="424.0" onKeyReleased="#search_page" prefHeight="30.0" prefWidth="180.0" promptText="Bon etat" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+            <TextField fx:id="txt_stock" layoutX="-14.0" layoutY="469.0" prefHeight="30.0" prefWidth="180.0" promptText="En stock" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_page" layoutX="213.0" layoutY="85.0" onMouseClicked="#getSelected" prefHeight="353.0" prefWidth="1064.0">
+        <columns>
+            <TableColumn fx:id="col_code" prefWidth="52.0" text="Code article" />
+            <TableColumn fx:id="col_description" prefWidth="75.0" text="Description" />
+          <TableColumn fx:id="col_etat" prefWidth="60.0" text="Bon etat" />
+            <TableColumn fx:id="col_num" prefWidth="67.0" text="Numéro" />
+            <TableColumn fx:id="col_lieu" prefWidth="56.0" text="Lieu" />
+            <TableColumn fx:id="col_stock" prefWidth="75.0" text="En stock" />
+            <TableColumn fx:id="col_bmvt" prefWidth="85.0" text="Bon de MVT" />
+            <TableColumn fx:id="col_type" prefWidth="56.0" text="Type" />
+            <TableColumn fx:id="col_nombre" prefWidth="63.0" text="Nombre" />
+          <TableColumn fx:id="col_id" prefWidth="65.0" text="ID ligne" />
+            <TableColumn fx:id="col_ref" prefWidth="79.0" text="Reférence" />
+            <TableColumn fx:id="col_affect" prefWidth="71.0" text="Affecté à" />
+            <TableColumn fx:id="col_zoneservice" prefWidth="98.0" text="Zone de service" />
+            <TableColumn fx:id="col_enservice" prefWidth="74.0" text="En service" />
+            <TableColumn fx:id="col_observ" prefWidth="85.0" text="Observation" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_id" layoutX="3.0" layoutY="138.0" prefHeight="30.0" prefWidth="180.0" promptText="ID ligne" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <TextField fx:id="txt_code" layoutX="3.0" layoutY="2.0" prefHeight="30.0" prefWidth="180.0" promptText="Code article " style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <TextField fx:id="txt_num" layoutX="3.0" layoutY="47.0" prefHeight="30.0" prefWidth="180.0" promptText="Numéro" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <TextField fx:id="txt_bmvt" layoutX="3.0" layoutY="93.0" prefHeight="30.0" prefWidth="180.0" promptText="Bon de MVT" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <TextField fx:id="txt_nombre" layoutX="203.0" layoutY="1.0" prefHeight="30.0" prefWidth="180.0" promptText="Nombre" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <TextField fx:id="txt_affect" layoutX="201.0" layoutY="43.0" prefHeight="30.0" prefWidth="180.0" promptText="Affectation" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <TextField fx:id="txt_zoneservice" layoutX="3.0" layoutY="184.0" prefHeight="30.0" prefWidth="180.0" promptText="Zone de service" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <TextField fx:id="txt_observ" layoutX="400.0" prefHeight="30.0" prefWidth="180.0" promptText="Observation" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <TextField fx:id="filterField" layoutX="1119.0" layoutY="31.0" promptText="Search" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;" />
+      <FontAwesomeIcon fill="#0066ff" glyphName="SEARCH" layoutX="1095.0" layoutY="54.0" size="25" text="" />
+      <Button layoutX="381.0" layoutY="480.0" mnemonicParsing="false" onAction="#Add_page" prefHeight="40.0" prefWidth="180.0" text="Add">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images__2_-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="580.0" layoutY="480.0" mnemonicParsing="false" onAction="#Edit" prefHeight="40.0" prefWidth="180.0" text="Update">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bouton-modifier-l-icône-du-crayon-illustration-générée-par-ordinateur-d-de-modification-isolé-sur-fond-blanc-approprié-pour-175672746-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="778.0" layoutY="479.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="180.0" text="Delete">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images__2_-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>

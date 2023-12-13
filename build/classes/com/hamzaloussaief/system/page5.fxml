@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #191524;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hamzaloussaief.system.Page5Controller">
+   <children>
+      <TextField fx:id="txt_id" layoutX="34.0" layoutY="316.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+      <VBox alignment="TOP_CENTER" layoutX="61.0" layoutY="12.0" prefHeight="493.0" prefWidth="429.0">
+         <children>
+            <TextField fx:id="txt_nom" alignment="TOP_LEFT" promptText="Nom" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txt_prenom" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="149.0" promptText="Prénom" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txt_ligne" alignment="TOP_LEFT" promptText="ID ligne" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txt_reference" alignment="TOP_LEFT" promptText="Réfrence demande" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txt_abonné" alignment="TOP_LEFT" promptText="abonné" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txt_lieu" alignment="TOP_LEFT" promptText="Lieu" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txt_date" alignment="TOP_LEFT" promptText="Date" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px0px1px0px;">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                 
+                              <Button layoutX="136.0" mnemonicParsing="false" onAction="#Add_fiche" prefHeight="40.0" prefWidth="128.0" text="Add">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images__2_-removebg-preview%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      
+     
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
